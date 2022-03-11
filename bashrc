@@ -147,6 +147,9 @@ alias fgrep='fgrep --colour=auto'
 
 alias la='ls -la'
 
+# Sometimes we need to remember something
+alias rmb='history | grep'
+
 # I don't see a reason to use vi over vim
 alias vi='vim'
 
