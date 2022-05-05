@@ -118,7 +118,7 @@ ex ()
       *.tar.bz2)   tar xjf $1   ;;
       *.tar.gz)    tar xzf $1   ;;
       *.bz2)       bunzip2 $1   ;;
-      *.rar)       unrar x $1     ;;
+      *.rar)       unrar x $1   ;;
       *.gz)        gunzip $1    ;;
       *.tar)       tar xf $1    ;;
       *.tbz2)      tar xjf $1   ;;
@@ -139,6 +139,9 @@ ex ()
 #
 #
 
+alias setzer='/usr/bin/flatpak run --branch=stable --arch=x86_64 --command=setzer --file-forwarding org.cvfosammmm.Setzer @@ %F @@'
+alias anki='env QTWEBENGINE_CHROMIUM_FLAGS="--no-sandbox" anki'
+
 # Colors
 alias ls='ls --color=auto'
 alias grep='grep --colour=auto'
@@ -150,17 +153,23 @@ alias la='ls -la'
 # Sometimes we need to remember something
 alias rmb='history | grep'
 
+#Get the pid by a name
+alias pid='ps -A | grep'
+
 # I don't see a reason to use vi over vim
 alias vi='vim'
 
 # do not delete / or prompt if deleting more than 3 files at a time
 alias rm='rm -I --preserve-root'
  
-# confirmation #
+# I like to see context
+alias cal='cal -3'
+
+# confirmation 
 alias mv='mv -i' 
 alias cp='cp -i' 
 alias ln='ln -i'
- 
+
 # Parenting changing perms on / #
 alias chown='chown --preserve-root'
 alias chmod='chmod --preserve-root'

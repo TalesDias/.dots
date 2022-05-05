@@ -280,9 +280,18 @@ command! -nargs=0 OR   :call     CocAction('runCommand', 'editor.action.organize
 autocmd FileType python  map <buffer> <F9>      :w<CR>:exec '!python3' shellescape(@%, 1)<CR>
 autocmd FileType python imap <buffer> <F9> <esc>:w<CR>:exec '!python3' shellescape(@%, 1)<CR>
 
-" F9 Saves and executes Python
+" F9 Saves and executes Haskell
 autocmd FileType haskell  map <buffer> <F9>      :w<CR>:exec '!stack' shellescape(@%, 1)<CR>
 autocmd FileType haskell imap <buffer> <F9> <esc>:w<CR>:exec '!stack' shellescape(@%, 1)<CR>
+
+" F9 Saves and executes  C
+autocmd FileType c  map <buffer> <F9>      :w<CR>:exec '!make && make run' shellescape(@%, 1)<CR>
+autocmd FileType c imap <buffer> <F9> <esc>:w<CR>:exec '!make && make run' shellescape(@%, 1)<CR>
+
+" F9 Saves and executes  C++
+autocmd FileType cpp  map <buffer> <F9>      :w<CR>:exec '!make && make run' shellescape(@%, 1)<CR>
+autocmd FileType cpp imap <buffer> <F9> <esc>:w<CR>:exec '!make && make run' shellescape(@%, 1)<CR>
+
 
 " Fixes bug for colortheme + kitty
 let &t_ut=''
