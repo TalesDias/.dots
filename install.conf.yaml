@@ -7,4 +7,5 @@
     ~/.tmux.conf: tmux.conf
     ~/.vimrc: vimrc
     ~/.vim/coc-settings.json: coc-settings.json
-    ~/.inputrc: inputrc 
+    ~/.inputrc: inputrc
+    ~/.config/i3/config: config
