@@ -12,10 +12,12 @@
 set $mod Mod4
 
 # Set the keyboard to colemak
-exec "setxkbmap us -variant colemak"
+exec --no-startup-id "setxkbmap us -variant colemak"
 
 # Configure my monitors
-exec "xrandr --output VGA-1 --auto --above LVDS-1"
+exec --no-startup-id "xrandr --output VGA-1 --auto --above LVDS-1"
+
+exec --no-startup-id nitrogen --restore
 
 # Font for window titles. Will also be used by the bar unless a different font
 # is used in the bar {} block below.
@@ -196,5 +198,5 @@ bar {
 }
 
 #Autostarting Applications
-exec workrave
+exec --no-startup-id workrave
 # Review the lines below and append to ~/.config/i3/config
