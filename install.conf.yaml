@@ -9,3 +9,4 @@
     ~/.vim/coc-settings.json: coc-settings.json
     ~/.inputrc: inputrc
     ~/.config/i3/config: config
+    ~/.gdbinit: gdbinit
