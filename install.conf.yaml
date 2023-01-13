@@ -11,3 +11,4 @@
     ~/.gdbinit: gdbinit
     ~/.config/i3: ./i3
     ~/.config/polybar: ./polybar
+    ~/.config/nvim: ./nvim
