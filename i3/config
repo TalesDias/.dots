@@ -102,7 +102,8 @@ bindsym Print exec shutter -f
 # bindsym $mod+m exec --no-startup-id dmenu_run
 # A more modern dmenu replacement is rofi:
 # bindcode $mod+40 exec "rofi -modi drun,run -show drun"
-bindsym $mod+m exec "rofi -modi drun,run -show drun"
+bindsym $mod+m exec "rofi -modi 'drun#run#combi' -show combi -combi-modi 'drun#run' -show-icons"
+bindsym $mod+c exec "rofi -show calc -modi 'calc:qalc +u8 -nocurrencies'"
 # There also is i3-dmenu-desktop which only displays applications shipping a
 # .desktop file. It is a wrapper around dmenu, so you need that installed.
 # bindcode $mod+40 exec --no-startup-id i3-dmenu-desktop
