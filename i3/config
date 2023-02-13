@@ -33,6 +33,7 @@ set $mod Mod4
 
 # Set the keyboard to colemak
 exec --no-startup-id "setxkbmap us -variant colemak"
+exec --no-startup-id "ibus-daemon -d"
 
 # Configure my monitors
 exec --no-startup-id "xrandr --output VGA-1 --auto --above LVDS-1"
@@ -82,6 +83,7 @@ floating_modifier $mod
 
 # Search for files in rofi
 bindsym $mod+f exec ~/.config/i3/bin/rofifinder
+
 
 # Start Terminal
 bindsym $mod+Return exec kitty

@@ -162,8 +162,8 @@ alias vi='vim'
 # do not delete / or prompt if deleting more than 3 files at a time
 alias rm='rm -I --preserve-root'
  
-# I like to see context
-alias cal='cal -3'
+# I realy like to see context
+alias cal='cal -B2 -A5'
 
 # confirmation 
 alias mv='mv -i' 
