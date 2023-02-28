@@ -150,6 +150,8 @@ alias fgrep='fgrep --colour=auto'
 
 alias la='ls -la'
 
+alias bye='echo "bye bye :>" && exit'
+
 # Sometimes we need to remember something
 alias rmb='history | grep'
 

@@ -37,10 +37,9 @@ exec --no-startup-id "ibus-daemon -d"
 
 # Configure my monitors
 exec --no-startup-id "xrandr --output VGA-1 --auto --above LVDS-1"
-
 exec --no-startup-id nitrogen --restore
 
-# 
+# this pictures always make me smile
 set $lock_w_bg  i3lock -i /home/silva/Pictures/shit/bg.png
 
 
